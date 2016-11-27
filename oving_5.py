@@ -16,7 +16,7 @@ class CSP:
         self.constraints = {}
 
     def add_variable(self, name, domain):
-        """Add a new variable to the CSP. 'name' is the variable name
+        """Add a new variable to the CSP. 'name' is the variable name  
         and 'domain' is a list of the legal values for the variable.
         """
         self.variables.append(name)
