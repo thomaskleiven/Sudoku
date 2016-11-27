@@ -5,7 +5,7 @@ import itertools
 
 class CSP:
     def __init__(self):
-        # self.variables is a list of the variable names in the CSP 
+        # self.variables is a list of the variable names in the CSP  
         self.variables = []
 
         # self.domains[i] is a list of legal values for variable i
