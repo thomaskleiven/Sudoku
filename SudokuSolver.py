@@ -138,7 +138,6 @@ class CSP:
                 if(inference):
                     result = self.backtrack(newAssignment)
                     if(result):
-                        print("I'm here!")
                         return result       
         return False                                   
 
@@ -204,7 +203,6 @@ class CSP:
                 if (x != y):
                     remove = False
             if(remove):
-                print(assignment[j])
                 assignment[i].remove(x)
                 revised = True      
 
@@ -273,11 +271,11 @@ def print_sudoku_solution(solution):
 
 
 def main():
-    mapCsp = create_map_coloring_csp()
-    print(mapCsp.backtracking_search())
+    #mapCsp = create_map_coloring_csp()
+    #print(mapCsp.backtracking_search())
     #mapCsp.backtracking_search()
-    #sudokoCsp = create_sudoku_csp("veryhard.txt")
-    #print_sudoku_solution(sudokoCsp.backtracking_search())
+    sudokoCsp = create_sudoku_csp("evil.txt")
+    print_sudoku_solution(sudokoCsp.backtracking_search())
 
 main()    
 
