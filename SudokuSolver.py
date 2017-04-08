@@ -125,7 +125,6 @@ class CSP:
         assignments and inferences that took place in previous
         iterations of the loop.
         """
-        # TODO: IMPLEMENT THIS
         if(self.isComplete(assignment)):
             return assignment
         variable = self.select_unassigned_variable(assignment)
@@ -149,7 +148,6 @@ class CSP:
         in 'assignment' that have not yet been decided, i.e. whose list
         of legal values has a length greater than one.
         """
-        # TODO: IMPLEMENT THIS
         for variable in assignment:
             if(len(assignment[variable]) > 1):
                 return variable       
@@ -160,7 +158,6 @@ class CSP:
         the lists of legal values for each undecided variable. 'queue'
         is the initial queue of arcs that should be visited.
         """
-        # TODO: IMPLEMENT THIS
         while (len(queue) > 0):
             arcs = queue.pop()
             #print (arcs)
